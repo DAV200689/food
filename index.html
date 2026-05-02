@@ -1,23 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Restaurant</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food, LLC</title>
 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- External CSS only (no inline styles) -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-  <body>
-    <header>
-        <nav id="header-nav" class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <a href="index.html" class="">
-                        <div id="logo-img" alt="logo img"></div>
-                    </a>
-                </div>
-              
-  </body>
+<body>
+
+  <!-- Default navbar (scrolls with page, not fixed) -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+
+      <!-- Brand + Toggle -->
+      <div class="navbar-header">
+
+        <!-- Dropdown button (only visible on mobile) -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-items">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <!-- Brand name aligned left using navbar-brand -->
+        <a class="navbar-brand" href="#">Food, LLC</a>
+      </div>
+
+      <!-- Dropdown menu (slides down on mobile, full width) -->
+      <div class="collapse navbar-collapse" id="menu-items">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="text-center" href="#">Chicken</a></li>
+          <li><a class="text-center" href="#">Beef</a></li>
+          <li><a class="text-center" href="#">Sushi</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Page heading centered using Bootstrap -->
+  <div class="container">
+    <h1 class="text-center">Our Menu</h1>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
 </html>
